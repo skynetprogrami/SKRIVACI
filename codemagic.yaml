@@ -4,6 +4,12 @@ workflows:
     max_build_duration: 60
     instance_type: mac_mini_m1
     environment:
+      android_components:
+        - tools
+        - platform-tools
+        - build-tools-34.0.0
+        - android-34
+      java: 17
       node: latest
     triggering:
       events:
@@ -14,6 +20,6 @@ workflows:
           cd SKRIVACI_ANDROID
           gradle wrapper --gradle-version 8.7
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug -Dorg.gradle.java.home=$JAVA_HOME_17
     artifacts:
       - SKRIVACI_ANDROID/app/build/outputs/apk/**/*.apk

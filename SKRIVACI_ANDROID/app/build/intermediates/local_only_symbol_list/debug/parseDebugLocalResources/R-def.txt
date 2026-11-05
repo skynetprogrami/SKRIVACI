@@ -1,0 +1,18 @@
+R_DEF: Internal format may change without notice
+local
+id boardFace
+id boardHeight
+id boardInfo
+id boardWidth
+id calcDimensions
+id calcPerimeter
+id reset
+id roomLength
+id roomPerimeter
+id roomResults
+id roomWidth
+id totalGypsum
+id totalUd
+layout activity_main
+style AppTheme
+style NumberField

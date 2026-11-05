@@ -1,0 +1,16 @@
+com.md.skrivaci:style/AppTheme = 0x7f030000
+com.md.skrivaci:layout/activity_main = 0x7f020000
+com.md.skrivaci:id/totalGypsum = 0x7f01000b
+com.md.skrivaci:id/roomWidth = 0x7f01000a
+com.md.skrivaci:id/boardHeight = 0x7f010001
+com.md.skrivaci:id/roomLength = 0x7f010007
+com.md.skrivaci:id/calcPerimeter = 0x7f010005
+com.md.skrivaci:style/NumberField = 0x7f030001
+com.md.skrivaci:id/roomPerimeter = 0x7f010008
+com.md.skrivaci:id/calcDimensions = 0x7f010004
+com.md.skrivaci:id/reset = 0x7f010006
+com.md.skrivaci:id/totalUd = 0x7f01000c
+com.md.skrivaci:id/boardInfo = 0x7f010002
+com.md.skrivaci:id/roomResults = 0x7f010009
+com.md.skrivaci:id/boardWidth = 0x7f010003
+com.md.skrivaci:id/boardFace = 0x7f010000

@@ -1,0 +1,47 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.md.skrivaci.app-mergeDebugResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Vlada\\Downloads\\SKRIVACI_ANDROID\\app\\src\\main\\res\\values\\attrs.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "447"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "510",
+                        "endLines": "18",
+                        "endColumns": "12",
+                        "endOffsets": "941"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Vlada\\Downloads\\SKRIVACI_ANDROID\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "466"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "505"
+                    }
+                }
+            ]
+        }
+    ]
+}

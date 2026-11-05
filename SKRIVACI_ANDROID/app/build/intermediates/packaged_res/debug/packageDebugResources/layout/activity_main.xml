@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F5F7"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ŠKRIVAČI"
+            android:textColor="#263238"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obračun materijala • radi bez interneta"
+            android:textColor="#607D8B"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="14dp"
+            android:background="#FFFFFF">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="DIMENZIJE ŠKRIVAČA (cm)" android:textStyle="bold"
+                android:textColor="#263238" android:textSize="16sp" android:layout_marginBottom="8dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <EditText android:id="@+id/boardWidth" style="@style/NumberField" android:hint="Širina" />
+                <EditText android:id="@+id/boardHeight" style="@style/NumberField" android:hint="Visina" android:layout_marginStart="8dp" />
+                <EditText android:id="@+id/boardFace" style="@style/NumberField" android:hint="Čelo" android:layout_marginStart="8dp" />
+            </LinearLayout>
+            <TextView android:id="@+id/boardInfo" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Unesi dimenzije škrivača da bi se izračunao broj gipsanih ploča."
+                android:textColor="#607D8B" android:textSize="12sp" android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="14dp" android:layout_marginTop="12dp" android:background="#FFFFFF">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="1. OBRAČUN PO DIMENZIJAMA SOBE" android:textStyle="bold" android:textColor="#263238" android:textSize="16sp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp">
+                <EditText android:id="@+id/roomWidth" style="@style/NumberField" android:hint="Širina (m)" />
+                <EditText android:id="@+id/roomLength" style="@style/NumberField" android:hint="Dužina (m)" android:layout_marginStart="8dp" />
+            </LinearLayout>
+            <Button android:id="@+id/calcDimensions" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="IZRAČUNAJ PO DIMENZIJAMA" android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="14dp" android:layout_marginTop="12dp" android:background="#FFFFFF">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="2. OBRAČUN PO OBIMU SOBE" android:textStyle="bold" android:textColor="#263238" android:textSize="16sp" />
+            <EditText android:id="@+id/roomPerimeter" style="@style/NumberField" android:hint="Obim sobe (m)" android:layout_width="match_parent" android:layout_marginTop="8dp" />
+            <Button android:id="@+id/calcPerimeter" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="IZRAČUNAJ PO OBIMU" android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="14dp" android:layout_marginTop="12dp" android:background="#FFFFFF">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="UKUPAN MATERIJAL" android:textStyle="bold" android:textColor="#263238" android:textSize="16sp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:text="GIPSANE PLOČE" android:textColor="#607D8B" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:id="@+id/totalGypsum" android:text="0" android:textColor="#B3261E" android:textSize="30sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:text="UD PROFILI" android:textColor="#607D8B" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:id="@+id/totalUd" android:text="0" android:textColor="#B3261E" android:textSize="30sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/roomResults" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Još nema obračunatih soba." android:textColor="#37474F" android:textSize="14sp" android:layout_marginTop="12dp" />
+            <Button android:id="@+id/reset" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="OBRIŠI SVE / NOVI OBRAČUN" android:layout_marginTop="12dp" android:backgroundTint="#607D8B" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Napomena: zadržana je računska logika originalnog VB6 programa."
+            android:textColor="#78909C" android:textSize="11sp" android:gravity="center" android:layout_marginTop="14dp" android:layout_marginBottom="12dp" />
+    </LinearLayout>
+</ScrollView>

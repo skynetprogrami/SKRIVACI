@@ -12,7 +12,7 @@ workflows:
       - name: Build Android APK
         script: |
           cd SKRIVACI_ANDROID
-          gradle wrapper --gradle-version 8.0
+          gradle wrapper --gradle-version 8.7
           chmod +x gradlew
           ./gradlew assembleDebug
     artifacts:

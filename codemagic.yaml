@@ -18,6 +18,6 @@ workflows:
           cd SKRIVACI_ANDROID
           gradle wrapper --gradle-version 8.7
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug -Pkotlin.jvm.target.validation.mode=ignore
     artifacts:
       - SKRIVACI_ANDROID/app/build/outputs/apk/**/*.apk
